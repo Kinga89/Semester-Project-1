@@ -272,7 +272,8 @@ img {
 
 .about-section h1,
 .event-section h1,
-.explore-section h1 {
+.explore-section h1,
+.newsletter h1 {
   min-height: 5vh;
   text-align: center;
   display: block;
@@ -476,7 +477,8 @@ img {
 
   .about-section h1,
   .event-section h1,
-  .explore-section h1 {
+  .explore-section h1,
+  .newsletter h1 {
     font-size: var(--fs-M);
     padding-top: 20px;
     background-color: transparent;
