@@ -4,7 +4,7 @@ html {
 
 :root {
   --fs-XL: 20px;
-  --fs-L: 18px;
+  --fs-L: 1.5vw;
   --fs-M: 15px;
   --fs-S: 12px;
   --fs-XS: 10px;
@@ -19,14 +19,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   margin: 0;
+  flex: 1;
 }
 
 h1 {
-  font-family: "Russo One", sans-serif;
+  font-family: "Russo One", sans-serif, Verdana, Tahoma, sans-serif;
 }
 
 .spacer {
@@ -259,13 +262,12 @@ img {
 }
 
 .about-section {
-  position: relative;
-  height: 70vh;
   width: 100%;
 }
 
 .about-section h1,
-.event-section h1 {
+.event-section h1,
+.explore-section h1 {
   min-height: 5vh;
   text-align: center;
   display: block;
@@ -276,28 +278,32 @@ img {
 .blue-background {
   background-color: #1ba1e8;
   margin: 0;
+}
+
+.about-wrapper,
+.explore-container {
+  width: 80%;
   display: flex;
+  margin: 0 auto;
+  padding: 50px 0;
+  height: 30em;
 }
 
-.about-text {
+.about-text,
+.explore-text {
   background-color: #fff;
-  margin: 30px 0 30px 70px;
-  flex-wrap: wrap;
 }
 
-.about-text p {
+.about-text p,
+.explore-text p {
   font-size: var(--fs-L);
-  padding: 20px 25px;
-}
-
-.vr-boy {
-  margin: 30px 70px 30px 0;
+  padding: 20px;
 }
 
 .about-text,
 .vr-boy {
   flex: 1;
-  height: 30em;
+  box-shadow: 0 0 1em rgb(22, 22, 22);
 }
 
 .vr-boy img {
@@ -306,41 +312,78 @@ img {
 
 .event-section {
   width: 100%;
-  height: 70vh;
-}
-
-.event-section h1 {
-  padding-top: 110px;
 }
 
 .event-container {
   background-color: #e57e20;
-  padding: 50px 200px;
+  padding: 50px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .event {
-  margin: 20px;
-  display: flex;
+  margin: 10px;
 }
 
 .event-img {
-  flex: 40%;
+  display: flex;
+  position: relative;
 }
 
-.event-img img,
-.event-txt {
-  height: 300px;
+.event-img img {
+  height: fit-content;
 }
-.event-txt {
-  flex: 60%;
+
+.event-img p {
+  text-align: center;
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+  color: #000;
   background-color: #fff;
-  padding: 0 15px;
+  font-size: var(--fs-XS);
+  font-weight: bolder;
+  border: #000 solid 2px;
+}
+
+.event-txt {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  border: black solid 3px;
+  background-color: #fff;
+}
+
+.event-txt h2 {
+  font-size: var(--fs-M);
+  margin: 5px;
+  text-align: center;
 }
 
 .event-txt p {
-  font-size: var(--fs-S)
+  font-size: var(--fs-S);
+  background-color: #fff;
+}
+
+.explore-section {
+  margin: 0 auto;
+}
+
+.explore-container {
+  height: 25em;
+}
+
+.explore-text h2 {
+  text-align: center;
+}
+
+.explore-text,
+.explore-image {
+  flex: 1;
+}
+
+.explore-image img {
+  height: 100%;
 }
 
 /*------------------HEADER (mobile/ipad)------------------*/
@@ -385,25 +428,24 @@ img {
   }
 }
 
-
 /*----------------HOMEPAGE (mobile/ipad)-----------------*/
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 760px) {
   .spacer {
     height: 100px;
     width: 100%;
   }
   .section-one {
-    max-height: 50vh;
+    max-height: 40vh;
   }
 
   img {
-    max-height: 50vh;
+    max-height: 40vh;
     object-fit: cover;
   }
 
   .slider-container {
     height: 50vh;
-    background-image
+    background-position: bottom;
   }
 
   .box {
@@ -424,7 +466,7 @@ img {
   .about-section h1,
   .event-section h1 {
     font-size: var(--fs-L);
-    padding-top: 10px;
+    padding-top: 20px;
     margin: 0;
   }
 
@@ -433,7 +475,7 @@ img {
   }
 
   .blue-background {
-    height: max-content;
+    max-height: fit-content;
     display: block;
     padding: 10px;
   }
@@ -461,7 +503,8 @@ img {
 
   .event-section h1 {
     background-color: transparent;
-    margin-top: 25%;
+    margin-top: 17vh;
+    padding-bottom: 10px;
   }
 
   .event-container {
@@ -495,85 +538,3 @@ img {
     font-size: var(--fs-XS);
   }
 }
-
-@media screen and (min-width: 600px) and (max-width: 899px) {
-    .about-section {
-        top: 0;
-        margin-top: 0;
-        height: 90vh;
-      }
-    
-      .about-section h1,
-      .event-section h1 {
-        font-size: var(--fs-L);
-        padding: 10px;
-        margin: 0;
-      }
-    
-      .blue-background {
-        height: 90vh;
-        display: flex;
-        padding: 20px;
-      }
-    
-      .about-text {
-        margin: 10px 0 10px 10px;
-        flex: 1;
-      }
-
-      .vr-boy {
-          flex: 1;
-          margin: 10px 10px 10px 0;
-      }
-    
-      .about-text p,
-      .event-txt h2 {
-        font-size: var(--fs-M);
-      }
-    
-      .about-text p {
-        padding: 15px;
-        margin: 0;
-      }
-    
-      .event-section {
-        height: max-content;
-        background-color: #e57e20;
-        margin: 0;
-      }
-    
-      .event-section h1 {
-        background-color: #fff;
-        margin-top: 13%;
-      }
-    
-      .event-container {
-        background-color: #06455b;
-        margin: 0 50px;
-        padding: 20px;
-      }
-    
-      .event-img,
-      .event-txt {
-        height: 150px;
-      }
-    
-      .event-img img {
-        height: 100%;
-      }
-    
-      .event-txt {
-        background-color: transparent;
-        padding: 0 15px;
-        color: #fff;
-      }
-    
-      .event-txt h2
-{
-          margin-top: 0;
-      }
-      .event-txt p {
-        font-size: var(--fs-XS);
-      }
-}
-
