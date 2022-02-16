@@ -37,7 +37,20 @@ h1 {
   width: 100%;
 }
 
-/*--------------------HEADER--------------------------*/
+.cta-button {
+  background-color: white;
+  color: #000;
+  display: inline;
+  border-radius: 15px;
+  padding: 10px 20px 10px 20px;
+  font-size: var(--fs-S);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  width: 120px;
+}
+
+/*--------------------HEADER & FOOTER--------------------------*/
 
 .header-container {
   position: fixed;
@@ -127,6 +140,63 @@ li a {
 
 li a:hover {
   color: #fff;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #06455b;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #fff;
+  padding: 30px 0;
+  margin: 0 50px;
+}
+
+.contact h2,
+.opening-hours h2 {
+  font-size: var(--fs-M);
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+.contact,
+.opening-hours,
+.social-media {
+  font-size: var(--fs-S);
+}
+
+.contact {
+  line-height: 15px;
+}
+
+.opening-hours li {
+  list-style: none;
+  margin-left: 0;
+  line-height: 20px;
+  text-align: left;
+  background: transparent;
+  text-transform: none;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media i {
+  font-size: 3em;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.copyright-txt {
+  color: #fff;
+  font-size: var(--fs-M);
+  text-align: center;
 }
 
 /*--------------------HOMEPAGE--------------------------*/
@@ -273,7 +343,7 @@ img {
 .about-section h1,
 .event-section h1,
 .explore-section h1,
-.newsletter h1 {
+.newsletter-section h1 {
   min-height: 5vh;
   text-align: center;
   display: block;
@@ -406,7 +476,34 @@ img {
   box-shadow: 0 0 1em rgb(22, 22, 22);
 }
 
-/*------------------HEADER (mobile/ipad)------------------*/
+.newsletter-section {
+  margin: 0 auto;
+  height: max-content;
+}
+
+.form-wrapper {
+  background-color: #e57e20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.form-wrapper > * {
+  padding: 10px;
+  margin-bottom: 40px;
+  width: 300px;
+  box-shadow: 0 0 2px rgb(22, 22, 22);
+}
+
+.signin-button {
+  align-content: center;
+  text-align: center;
+  box-shadow: none;
+  margin: 0;
+}
+
+/*------------------HEADER & FOOTER (mobile/ipad)------------------*/
 @media screen and (max-width: 810px) {
   header {
     height: 90px;
@@ -478,7 +575,7 @@ img {
   .about-section h1,
   .event-section h1,
   .explore-section h1,
-  .newsletter h1 {
+  .newsletter-section h1 {
     font-size: var(--fs-M);
     padding-top: 20px;
     background-color: transparent;
@@ -567,7 +664,7 @@ img {
 
   .explore-section {
     background-color: #1ba1e8;
-    height: 100vh;
+    height: 70vh;
     padding-bottom: 20px;
   }
 
@@ -576,7 +673,6 @@ img {
     margin-bottom: 10px;
     padding: 0;
     width: 100%;
-    border: red solid 2px;
   }
 
   .explore-text {
@@ -600,4 +696,11 @@ img {
     padding: 10px 20px;
     font-size: var(--fs-S);
   }
+
+  .newsletter-section {
+    height: 70vh;
+  }
+
+
+
 }
