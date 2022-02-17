@@ -21,6 +21,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
@@ -539,6 +540,61 @@ img {
   margin: 0;
 }
 
+/*-------------------------EXHIBITIONS----------------------------*/
+.exhibitions-background {
+  background-color: #1ba1e8;
+}
+
+.exhibitions-background h1 {
+  text-align: center;
+  display: block;
+  margin: 50px 0 30px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.exhibitions-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 3vw;
+  column-gap: 3rem;
+}
+
+.exhibition-type {
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 1em rgb(22, 22, 22);
+}
+
+.exhibition-type:hover {
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0, 0.4);
+  transition: 0.3s;
+  color: #fff;
+}
+
+.exhibition-type p {
+  padding: 15px;
+}
+
+.exhibition-type img {
+  max-height: 40vh;
+}
+
+.exhibition-type h2 {
+  text-align: center;
+  display: block;
+}
+
+.explore {
+  position: relative;
+  text-decoration: underline;
+  font-weight: bold;
+  float: right;
+  margin: 10px;
+}
+
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
 @media screen and (max-width: 810px) {
   header {
@@ -577,7 +633,7 @@ img {
 
   nav {
     position: absolute;
-    margin-top: 23px;
+    margin-top: 6vh;
     width: 70px;
     right: 0;
   }
