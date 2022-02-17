@@ -564,6 +564,8 @@ img {
   margin-bottom: 30px;
   background-color: #fff;
   box-shadow: 0 0 1em rgb(22, 22, 22);
+  display: flex;
+  flex-direction: column;
 }
 
 .exhibition-type:hover {
@@ -579,7 +581,7 @@ img {
 }
 
 .exhibition-type img {
-  max-height: 40vh;
+  height: 30vh;
 }
 
 .exhibition-type h2 {
@@ -588,11 +590,45 @@ img {
 }
 
 .explore {
-  position: relative;
+  display: block;
+  text-align: end;
   text-decoration: underline;
   font-weight: bold;
-  float: right;
   margin: 10px;
+}
+
+/*------------------------VISIT US---------------------------*/
+.visit-section {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.visit-part {
+  font-size: var(--fs-M);
+  display: flex;
+  border: blue 3px solid;
+}
+
+.visit-part img {
+  flex: 1;
+}
+
+.visit-subpart {
+  flex: 1;
+}
+
+.visit-subpart h2 {
+  text-align: center;
+  font-size: var(--fs-L);
+}
+
+.visit-subpart li {
+  background-color: transparent;
+  text-align: center;
+  border: red 3px solid;
+  margin-left: 0;
+  text-transform: none;
 }
 
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
@@ -760,7 +796,8 @@ img {
   .about-section h1,
   .event-section h1,
   .explore-section h1,
-  .newsletter-section h1 {
+  .newsletter-section h1,
+  .exhibitions-background h1 {
     font-size: var(--fs-M);
     padding-top: 20px;
     background-color: transparent;
@@ -896,5 +933,46 @@ img {
   .form-wrapper > * {
     margin-bottom: 40px;
     width: 180px;
+  }
+
+  /*------------------EXHIBITIONS------------------------*/
+  .exhibitions-background h1 {
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .exhibitions-container {
+    display: block;
+    margin: 0 4vw;
+  }
+
+  .exhibition-type {
+    margin-bottom: 20px;
+    box-shadow: 0 0 0.5em rgb(22, 22, 22);
+  }
+
+  .exhibition-type p {
+    margin-bottom: 0;
+    font-size: var(--fs-S);
+  }
+
+  .exhibition-type img {
+    max-height: 40vh;
+  }
+
+  .exhibition-type h2 {
+    padding: 10px 20px;
+    font-size: var(--fs-M);
+  }
+
+  .explore {
+    display: block;
+    text-align: end;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0 10px;
   }
 }
