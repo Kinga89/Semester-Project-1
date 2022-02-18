@@ -598,35 +598,77 @@ img {
 }
 
 /*------------------------VISIT US---------------------------*/
+.museum img {
+  max-height: 60vh;
+}
+
+.museum {
+  position: relative;
+}
+
+.museum h1 {
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  padding: 30px 40px;
+  bottom: 0;
+  left: 45%;
+}
+
+.background-visit {
+  background-color: #1ba1e8;
+}
+
 .visit-section {
+  position: relative;
   margin: 0 50px;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+}
+
+.map-section {
+}
+
+.map-section h2 {
+  text-align: center;
+}
+
+.map-address-wrapper {
+  display: flex;
+}
+
+.visit-address {
+  flex: 40%;
+}
+
+.visit-map {
+  flex: 60%;
+}
+
+.visit-address p {
+  margin-top: auto;
+  margin-left: 30%;
 }
 
 .visit-part {
-  font-size: var(--fs-M);
-  display: flex;
-  border: blue 3px solid;
+  margin: 20px 0;
 }
 
-.visit-part img {
-  flex: 1;
-}
-
-.visit-subpart {
-  flex: 1;
+.visit-part img,
+.visit-map {
+  max-height: 60vh;
 }
 
 .visit-subpart h2 {
   text-align: center;
-  font-size: var(--fs-L);
 }
 
 .visit-subpart li {
   background-color: transparent;
   text-align: center;
-  border: red 3px solid;
+  line-height: normal;
   margin-left: 0;
   text-transform: none;
 }
