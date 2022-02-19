@@ -4,7 +4,7 @@ html {
 
 :root {
   --fs-XL: 20px;
-  --fs-L: 1.5vw;
+  --fs-L: 18px;
   --fs-M: 15px;
   --fs-S: 12px;
   --fs-XS: 10px;
@@ -608,12 +608,13 @@ img {
 
 .museum h1 {
   position: absolute;
-  text-align: center;
   display: inline-block;
   background-color: #fff;
-  padding: 30px 40px;
+  text-align: center;
+  padding: 30px;
+  width: 200px;
   bottom: 0;
-  left: 45%;
+  left: 40%;
 }
 
 .background-visit {
@@ -625,13 +626,47 @@ img {
   margin: 0 50px;
   display: flex;
   flex-direction: column;
+}
+
+.opening-admission {
+  display: flex;
+}
+
+.opening-hrs {
   background-color: #fff;
+  font-size: var(--fs-M);
+  margin: 20px 0;
 }
 
-.map-section {
+.opening-hrs,
+.admission {
+  flex: 1;
+  padding-bottom: 20px;
 }
 
-.map-section h2 {
+.admission h2 {
+  text-align: center;
+}
+
+.map-address-wrapper,
+.admission {
+  background-color: #fff;
+  font-size: var(--fs-M);
+  margin: 20px 0;
+}
+
+.admission {
+  margin-left: 50px;
+}
+
+.admission p {
+  padding: 0 40px;
+}
+
+.map-section h2,
+.opening-hrs h2 {
+  font-size: var(--fs-XL);
+  text-decoration: none;
   text-align: center;
 }
 
@@ -641,36 +676,68 @@ img {
 
 .visit-address {
   flex: 40%;
+  margin-top: 5%;
 }
 
 .visit-map {
   flex: 60%;
+  max-height: 60vh;
 }
 
-.visit-address p {
+.visit-address h2 {
+  text-align: left;
+}
+
+.visit-address p,
+.map-section h2 {
   margin-top: auto;
   margin-left: 30%;
 }
 
-.visit-part {
-  margin: 20px 0;
-}
-
-.visit-part img,
-.visit-map {
-  max-height: 60vh;
-}
-
-.visit-subpart h2 {
+.opening-hrs li,
+.opening-hrs h2 {
   text-align: center;
-}
-
-.visit-subpart li {
-  background-color: transparent;
-  text-align: center;
-  line-height: normal;
   margin-left: 0;
   text-transform: none;
+  line-height: 2;
+}
+
+.cafe-and-shop-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cafe,
+.shop,
+.accessibility {
+  position: relative;
+  margin: 20px 0 50px;
+}
+
+.cafe,
+.shop {
+  margin-right: 20px;
+}
+
+.cafe img,
+.shop img,
+.accessibility img {
+  max-height: 80vh;
+}
+
+.accessibility img {
+  background-position: top;
+}
+
+.cafe-txt,
+.shop-txt,
+.accessibility-txt {
+  position: absolute;
+  background-color: #fff;
+  padding: 0 20px 0;
+  bottom: 0;
+  flex-wrap: wrap;
+  min-height: 200px;
 }
 
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
@@ -1017,4 +1084,107 @@ img {
     font-weight: bold;
     margin: 0 10px;
   }
+
+/*------------------------VISIT US---------------------------*/
+.visit-section {
+  margin: 0 20px;
+}
+
+.museum img {
+  max-height: 30vh;
+}
+
+.museum h1 {
+  padding: 20px;
+  width: 100px;
+  font-size: var(--fs-L);
+}
+
+.opening-admission {
+  display: block;
+}
+
+.opening-hrs {
+  font-size: var(--fs-M);
+  margin: 20px 0;
+}
+
+.opening-hrs li {
+  line-height: 1;
+}
+
+.opening-hrs,
+.admission {
+  padding-bottom: 10px;
+}
+
+.map-address-wrapper,
+.admission {
+  font-size: var(--fs-M);
+  margin: 0;
+}
+
+.admission p {
+  padding: 0 30px;
+}
+
+.map-section h2,
+.opening-hrs h2,
+.admission h2 {
+  font-size: var(--fs-L);
+}
+
+.map-address-wrapper {
+  display: block;
+  margin-top: 20px;
+}
+
+.visit-address {
+  padding: 10px;
+}
+
+.visit-map {
+  max-height: 40vh;
+  width: 100%;
+}
+
+.visit-address h2 {
+  font-size: var(--fs-L);
+}
+
+.visit-address p,
+.map-section h2 {
+  line-height: 1;
+}
+
+.cafe-and-shop-wrapper {
+  display: block;
+  margin-top: 20px;
+}
+
+.cafe,
+.shop,
+.accessibility {
+  margin: 0 0 20px;
+  font-size: var(--fs-M);
+}
+
+.cafe h2, .shop h2, .accessibility h2 {
+  font-size: var(--fs-L);
+}
+
+
+.cafe img,
+.shop img,
+.accessibility img {
+  max-height: 60vh;
+}
+
+.cafe-txt,
+.shop-txt,
+.accessibility-txt {
+  padding: 0 20px 0;
+  min-height: 150px;
+}
+
 }
