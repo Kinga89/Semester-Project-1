@@ -3,6 +3,7 @@ html {
 }
 
 :root {
+  --fs-XXL: 30px;
   --fs-XL: 20px;
   --fs-L: 18px;
   --fs-M: 15px;
@@ -541,16 +542,29 @@ img {
 }
 
 /*-------------------------EXHIBITIONS----------------------------*/
-.exhibitions-background {
-  background-color: #1ba1e8;
+.exhibitions img {
+  height: 100%;
 }
 
-.exhibitions-background h1 {
-  text-align: center;
-  display: block;
-  margin: 50px 0 30px;
+.exhibitions {
+  position: relative;
+  max-height: 60vh;
+}
+
+.exhibitions h1 {
+  position: absolute;
+  display: inline-block;
   background-color: #fff;
+  text-align: center;
   padding: 30px;
+  width: 200px;
+  bottom: 0;
+  left: 40%;
+}
+
+.exhibitions-background {
+  background-color: #1ba1e8;
+  padding: 50px 0;
 }
 
 .exhibitions-container {
@@ -599,11 +613,12 @@ img {
 
 /*------------------------VISIT US---------------------------*/
 .museum img {
-  max-height: 60vh;
+  height: 100%;
 }
 
 .museum {
   position: relative;
+  max-height: 60vh;
 }
 
 .museum h1 {
@@ -668,6 +683,11 @@ img {
   font-size: var(--fs-XL);
   text-decoration: none;
   text-align: center;
+}
+
+.opening-hrs h2,
+.admission h2 {
+  padding-top: 10px;
 }
 
 .map-address-wrapper {
@@ -739,6 +759,69 @@ img {
   flex-wrap: wrap;
   min-height: 200px;
 }
+
+/*-----------------------GET INVOLVED-------------------------------*/
+.getinvolved {
+  position: relative;
+  max-height: 60vh;
+}
+
+.getinvolved img {
+  height: 100%;
+}
+
+.getinvolved h1 {
+  position: absolute;
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+  width: 300px;
+  bottom: 0;
+  left: 35%;
+}
+
+.background-getinvolved {
+  background-color: #e57e20;
+}
+
+.getinvolved-section h2 {
+  text-align: center;
+  font-size: var(--fs-XXL);
+}
+
+.getinvolved-section {
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 50px;
+}
+
+
+.volunteer, .internships {
+  display: flex;
+  margin: 50px 0;
+  background-color: #fff;
+  box-shadow: 0 0 1em rgb(22, 22, 22);
+}
+
+
+.volunteer img, .volunteer-txt, .internships img, .internships-txt {
+  flex: 1;
+}
+
+.volunteer img, .internships img {
+  max-height: 400px;
+}
+
+.volunteer-txt, .internships-txt {
+  padding: 0 20px;
+  font-size: var(--fs-M);
+}
+
+
+
+
+
 
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
 @media screen and (max-width: 810px) {
@@ -905,8 +988,7 @@ img {
   .about-section h1,
   .event-section h1,
   .explore-section h1,
-  .newsletter-section h1,
-  .exhibitions-background h1 {
+  .newsletter-section h1 {
     font-size: var(--fs-M);
     padding-top: 20px;
     background-color: transparent;
@@ -1091,7 +1173,7 @@ img {
   }
 
   .museum img {
-    max-height: 30vh;
+    max-height: 20vh;
   }
 
   .museum h1 {
@@ -1187,4 +1269,53 @@ img {
     padding: 0 20px 0;
     min-height: 150px;
   }
+
+/*-----------------------GET INVOLVED-------------------------------*/
+.background-getinvolved {
+  background-color: #e57e20;
 }
+
+.getinvolved img {
+  max-height: 20vh;
+}
+
+
+.getinvolved h1 {
+  padding: 20px;
+  width: 150px;
+  font-size: var(--fs-L);
+  left: 30%;
+}
+
+.getinvolved-section h2 {
+  text-align: center;
+  font-size: var(--fs-L);
+}
+
+.getinvolved-section {
+  margin: 0;
+  max-width: 100%;
+  margin: 20px;
+}
+
+
+.volunteer, .internships {
+  display: block;
+  margin: 20px 0;
+  box-shadow: 0 0 1em rgb(22, 22, 22);
+}
+
+.volunteer img, .internships img {
+  max-height: 200px;
+}
+
+.volunteer-txt, .internships-txt {
+  padding: 20px;
+  font-size: var(--fs-M);
+}
+
+
+
+
+}
+
