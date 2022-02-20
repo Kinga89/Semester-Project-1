@@ -419,6 +419,7 @@ img {
   box-shadow: 0 0 1em rgb(22, 22, 22);
 }
 
+
 .vr-boy img {
   height: 100%;
 }
@@ -1016,6 +1017,7 @@ img {
 
   .vr-boy {
     padding-bottom: 20px;
+    height: 40vh;
   }
 
   .event-section {
@@ -1127,12 +1129,10 @@ img {
   }
 
   /*------------------EXHIBITIONS------------------------*/
-  .exhibitions-background h1 {
-    text-align: center;
-    display: block;
-    margin: 20px 0;
-    background-color: transparent;
-    padding: 0;
+  .exhibitions h1 {
+    padding: 15px;
+    width: 150px;
+    font-size: var(--fs-L);
   }
 
   .exhibitions-container {
@@ -1172,12 +1172,12 @@ img {
     margin: 0 20px;
   }
 
-  .museum img {
+  .museum {
     max-height: 20vh;
   }
 
   .museum h1 {
-    padding: 20px;
+    padding: 15px;
     width: 100px;
     font-size: var(--fs-L);
   }
@@ -1275,13 +1275,12 @@ img {
   background-color: #e57e20;
 }
 
-.getinvolved img {
+.getinvolved {
   max-height: 20vh;
 }
 
-
 .getinvolved h1 {
-  padding: 20px;
+  padding: 15px;
   width: 150px;
   font-size: var(--fs-L);
   left: 30%;
