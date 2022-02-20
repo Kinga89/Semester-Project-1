@@ -391,15 +391,15 @@ img {
 
 .blue-background {
   background-color: #1ba1e8;
-  margin: 0;
+  padding: 50px 0;
 }
 
-.about-wrapper,
-.explore-container {
+.about-wrapper {
+  box-shadow: 0 0 1em rgb(22, 22, 22);
   width: 80%;
   display: flex;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 0;
 }
 
 .about-text,
@@ -410,15 +410,13 @@ img {
 .about-text p,
 .explore-text p {
   font-size: var(--fs-L);
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .about-text,
 .vr-boy {
   flex: 1;
-  box-shadow: 0 0 1em rgb(22, 22, 22);
 }
-
 
 .vr-boy img {
   height: 100%;
@@ -487,6 +485,10 @@ img {
 
 .explore-container {
   height: 25em;
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .explore-text h2 {
@@ -793,36 +795,31 @@ img {
 
 .getinvolved-section {
   margin: 0 auto;
-  max-width: 1000px;
+  width: 800px;
   margin-top: 50px;
 }
 
-
-.volunteer, .internships {
-  display: flex;
-  margin: 50px 0;
-  background-color: #fff;
+.volunteer,
+.internships {
+  height: 100vh;
+  margin: 40px 0;
   box-shadow: 0 0 1em rgb(22, 22, 22);
+  position: relative;
 }
 
-
-.volunteer img, .volunteer-txt, .internships img, .internships-txt {
-  flex: 1;
+.volunteer img,
+.internships img {
+  height: 100%;
 }
 
-.volunteer img, .internships img {
-  max-height: 400px;
+.volunteer-txt,
+.internships-txt {
+  padding: 0 30px;
+  font-size: var(--fs-L);
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
 }
-
-.volunteer-txt, .internships-txt {
-  padding: 0 20px;
-  font-size: var(--fs-M);
-}
-
-
-
-
-
 
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
 @media screen and (max-width: 810px) {
@@ -984,6 +981,7 @@ img {
   .about-section {
     margin-top: 0;
     background-color: #1ba1e8;
+    padding: 0 0 30px;
   }
 
   .about-section h1,
@@ -997,10 +995,7 @@ img {
   }
 
   .about-wrapper {
-    width: 80%;
     display: block;
-    margin: 0 auto;
-    padding: 0;
   }
 
   .about-text p {
@@ -1012,11 +1007,9 @@ img {
   .about-text,
   .vr-boy {
     flex: 1;
-    box-shadow: none;
   }
 
   .vr-boy {
-    padding-bottom: 20px;
     height: 40vh;
   }
 
@@ -1079,11 +1072,15 @@ img {
 
   .explore-section {
     background-color: #1ba1e8;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+  }
+
+  .blue-background {
+    padding: 10px 0;
   }
 
   .explore-container {
-    height: fit-content;
+    height: 100%;
     margin-bottom: 10px;
     padding: 0;
     width: 100%;
@@ -1270,51 +1267,48 @@ img {
     min-height: 150px;
   }
 
-/*-----------------------GET INVOLVED-------------------------------*/
-.background-getinvolved {
-  background-color: #e57e20;
+  /*-----------------------GET INVOLVED-------------------------------*/
+  .background-getinvolved {
+    background-color: #e57e20;
+  }
+
+  .getinvolved {
+    max-height: 20vh;
+  }
+
+  .getinvolved h1 {
+    padding: 15px;
+    width: 150px;
+    font-size: var(--fs-L);
+    left: 30%;
+  }
+
+  .getinvolved-section h2 {
+    text-align: center;
+    font-size: var(--fs-L);
+  }
+
+  .getinvolved-section {
+    margin: 0;
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  .volunteer,
+  .internships {
+    display: block;
+    margin: 20px 0;
+    box-shadow: 0 0 1em rgb(22, 22, 22);
+  }
+
+  .volunteer img,
+  .internships img {
+    max-height: 200px;
+  }
+
+  .volunteer-txt,
+  .internships-txt {
+    padding: 20px;
+    font-size: var(--fs-M);
+  }
 }
-
-.getinvolved {
-  max-height: 20vh;
-}
-
-.getinvolved h1 {
-  padding: 15px;
-  width: 150px;
-  font-size: var(--fs-L);
-  left: 30%;
-}
-
-.getinvolved-section h2 {
-  text-align: center;
-  font-size: var(--fs-L);
-}
-
-.getinvolved-section {
-  margin: 0;
-  max-width: 100%;
-  margin: 20px;
-}
-
-
-.volunteer, .internships {
-  display: block;
-  margin: 20px 0;
-  box-shadow: 0 0 1em rgb(22, 22, 22);
-}
-
-.volunteer img, .internships img {
-  max-height: 200px;
-}
-
-.volunteer-txt, .internships-txt {
-  padding: 20px;
-  font-size: var(--fs-M);
-}
-
-
-
-
-}
-
