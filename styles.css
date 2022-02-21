@@ -770,12 +770,12 @@ img {
 
 /*-----------------------GET INVOLVED-------------------------------*/
 .getinvolved {
+  background-image: url(../images/william-bout-264826.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
   position: relative;
-  max-height: 60vh;
-}
-
-.getinvolved img {
-  height: 100%;
 }
 
 .getinvolved h1 {
@@ -801,28 +801,38 @@ img {
 .getinvolved-section {
   margin: 0 auto;
   width: 800px;
-  margin-top: 50px;
 }
 
 .volunteer,
 .internships {
-  height: 100vh;
+  height: 80vh;
   margin: 40px 0;
   box-shadow: 0 0 1em rgb(22, 22, 22);
   position: relative;
 }
 
-.volunteer img,
-.internships img {
+.volunteer-img {
+  background-image: url(../images/roberto-nickson-396152.jpg);
+}
+
+.internships-img {
+  background-image: url(../images/people-219985_1280.jpg);
+}
+
+.volunteer-img,
+.internships-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100%;
 }
 
 .volunteer-txt,
 .internships-txt {
-  padding: 0 30px;
-  font-size: var(--fs-L);
+  padding: 20px 40px;
+  font-size: var(--fs-M);
   position: absolute;
-  bottom: 0;
+  margin: 50px;
   background-color: #fff;
 }
 
@@ -1284,12 +1294,8 @@ img {
   }
 
   /*-----------------------GET INVOLVED-------------------------------*/
-  .background-getinvolved {
-    background-color: #e57e20;
-  }
-
   .getinvolved {
-    max-height: 20vh;
+    height: 20vh;
   }
 
   .getinvolved h1 {
@@ -1301,30 +1307,32 @@ img {
 
   .getinvolved-section h2 {
     text-align: center;
-    font-size: var(--fs-L);
+    font-size: var(--fs-XL);
   }
 
   .getinvolved-section {
     margin: 0;
-    max-width: 100%;
-    margin: 20px;
+    width: 100%;
   }
 
   .volunteer,
   .internships {
-    display: block;
+    height: 60vh;
     margin: 20px 0;
     box-shadow: 0 0 1em rgb(22, 22, 22);
+    position: relative;
   }
 
-  .volunteer img,
-  .internships img {
-    max-height: 200px;
+  .internships-img {
+    background-position: 30%;
   }
 
   .volunteer-txt,
   .internships-txt {
     padding: 20px;
-    font-size: var(--fs-M);
+    font-size: var(--fs-S);
+    position: absolute;
+    margin: 0;
+    width: 100%;
   }
 }
