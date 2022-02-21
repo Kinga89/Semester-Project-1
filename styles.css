@@ -391,28 +391,37 @@ img {
 
 .about-background {
   background-color: #1ba1e8;
-  padding: 50px 0;
+  padding: 0;
+  height: 70vh;
 }
 
 .about-wrapper {
-  box-shadow: 0 0 1em rgb(22, 22, 22);
-  width: 70%;
   margin: 0 auto;
-  position: relative;
-  height: 100vh;
+  display: flex;
+  height: 70vh;
+}
+
+.about-img {
+  background-image: url(../images/samuel-zeller-158996.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex: 1;
 }
 
 .about-text {
-  position: absolute;
-  bottom: 0;
+  align-items: center;
   background-color: #fff;
-  margin: 50px;
+  margin: 50px -150px 50px 50px;
   box-shadow: 0 0 1em rgb(22, 22, 22);
+  flex: 1;
+  height: fit-content;
+  z-index: 20;
 }
 
 .about-text p {
   font-size: var(--fs-M);
-  padding: 0 40px;
+  padding: 10px 50px;
 }
 
 .event-section {
@@ -480,11 +489,10 @@ img {
 }
 
 .explore-container {
-  height: 25em;
-  width: 80%;
+  width: 70%;
   display: flex;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .explore-text h2 {
@@ -979,12 +987,12 @@ img {
   }
 
   .slider-container {
-    height: 40vh;
+    height: 30vh;
     background-position: bottom;
   }
 
   .slider-container img {
-    max-height: 40vh;
+    height: 30vh;
     object-fit: cover;
   }
 
@@ -1007,11 +1015,11 @@ img {
     box-shadow: none;
     width: 80%;
     margin: 0 auto;
-    height: 60vh;
+    height: 50vh;
     bottom: 0;
   }
 
-  .about-wrapper img {
+  .about-img {
     display: none;
   }
 
@@ -1021,6 +1029,7 @@ img {
     padding: 30px 0;
     background-size: cover;
     background-position: center;
+    height: 50vh;
   }
 
   .about-section {
@@ -1032,11 +1041,12 @@ img {
     bottom: 0;
     margin: 0;
     box-shadow: none;
+    height: fit-content;
   }
 
   .about-text p {
     font-size: var(--fs-S);
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .event-section {
@@ -1061,7 +1071,7 @@ img {
   }
 
   .event-img img {
-    height: 100%;
+    height: auto;
   }
 
   .event-img p {
@@ -1087,13 +1097,14 @@ img {
     text-align: left;
     margin: 5px;
     color: #fff;
+    padding-top: 10px;
   }
 
   .event-txt p {
     font-size: var(--fs-XS);
     background-color: transparent;
     color: #fff;
-    padding-bottom: 10px;
+    padding: 0px 10px 10px;
   }
 
   .explore-section {
@@ -1333,6 +1344,5 @@ img {
     font-size: var(--fs-S);
     position: absolute;
     margin: 0;
-    width: 100%;
   }
 }
