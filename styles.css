@@ -389,37 +389,30 @@ img {
   margin: 30px 0;
 }
 
-.blue-background {
+.about-background {
   background-color: #1ba1e8;
   padding: 50px 0;
 }
 
 .about-wrapper {
   box-shadow: 0 0 1em rgb(22, 22, 22);
-  width: 80%;
-  display: flex;
+  width: 70%;
   margin: 0 auto;
-  padding: 0;
+  position: relative;
+  height: 100vh;
 }
 
-.about-text,
-.explore-text {
+.about-text {
+  position: absolute;
+  bottom: 0;
   background-color: #fff;
+  margin: 50px;
+  box-shadow: 0 0 1em rgb(22, 22, 22);
 }
 
-.about-text p,
-.explore-text p {
-  font-size: var(--fs-L);
-  padding: 0 20px;
-}
-
-.about-text,
-.vr-boy {
-  flex: 1;
-}
-
-.vr-boy img {
-  height: 100%;
+.about-text p {
+  font-size: var(--fs-M);
+  padding: 0 40px;
 }
 
 .event-section {
@@ -463,8 +456,6 @@ img {
 }
 
 .event-txt {
-  display: flex;
-  flex-direction: column;
   padding: 0 10px;
   background-color: #fff;
 }
@@ -477,6 +468,11 @@ img {
 
 .event-txt p {
   font-size: var(--fs-S);
+}
+
+.blue-background {
+  background-color: #1ba1e8;
+  padding: 50px 0;
 }
 
 .explore-section {
@@ -495,10 +491,19 @@ img {
   text-align: center;
 }
 
+.explore-text {
+  background-color: #fff;
+}
+
 .explore-text,
 .explore-image {
   flex: 1;
   box-shadow: 0 0 1em rgb(22, 22, 22);
+}
+
+.explore-text p {
+  font-size: var(--fs-L);
+  padding: 0 20px;
 }
 
 .explore-image img {
@@ -978,39 +983,50 @@ img {
     font-size: var(--fs-XS);
   }
 
-  .about-section {
-    margin-top: 0;
-    background-color: #1ba1e8;
-    padding: 0 0 30px;
-  }
-
   .about-section h1,
   .event-section h1,
   .explore-section h1,
   .newsletter-section h1 {
     font-size: var(--fs-M);
-    padding-top: 20px;
+    padding: 20px 0 0;
     background-color: transparent;
     margin: 0;
   }
 
   .about-wrapper {
-    display: block;
+    box-shadow: none;
+    width: 80%;
+    margin: 0 auto;
+    height: 60vh;
+    bottom: 0;
+  }
+
+  .about-wrapper img {
+    display: none;
+  }
+
+  .about-background {
+    background-image: url(../images/roberto-nickson-396152.jpg);
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about-section {
+    background-color: #1ba1e8;
+    padding: 0 0 30px;
+  }
+
+  .about-text {
+    bottom: 0;
+    margin: 0;
+    box-shadow: none;
   }
 
   .about-text p {
     font-size: var(--fs-S);
-    padding: 15px;
-    margin: 0;
-  }
-
-  .about-text,
-  .vr-boy {
-    flex: 1;
-  }
-
-  .vr-boy {
-    height: 40vh;
+    padding: 0 20px;
   }
 
   .event-section {
