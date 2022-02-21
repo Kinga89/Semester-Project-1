@@ -392,7 +392,6 @@ img {
 .about-background {
   background-color: #1ba1e8;
   padding: 0;
-  height: 70vh;
 }
 
 .about-wrapper {
@@ -412,16 +411,16 @@ img {
 .about-text {
   align-items: center;
   background-color: #fff;
-  margin: 50px -150px 50px 50px;
   box-shadow: 0 0 1em rgb(22, 22, 22);
   flex: 1;
   height: fit-content;
-  z-index: 20;
+  padding: 40px;
+  margin: auto 50px;
+  justify-content: center;
 }
 
 .about-text p {
   font-size: var(--fs-M);
-  padding: 10px 50px;
 }
 
 .event-section {
@@ -564,7 +563,12 @@ img {
 
 .exhibitions {
   position: relative;
-  max-height: 60vh;
+  background-image: url(../images/exhibition-1863344_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
 }
 
 .exhibitions h1 {
@@ -840,8 +844,10 @@ img {
   padding: 20px 40px;
   font-size: var(--fs-M);
   position: absolute;
+  justify-content: center;
   margin: 50px;
-  background-color: #fff;
+  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255, 0.8);
 }
 
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
@@ -1039,14 +1045,17 @@ img {
 
   .about-text {
     bottom: 0;
-    margin: 0;
     box-shadow: none;
     height: fit-content;
+    padding: 20px;
+    margin: auto 0;
+    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255, 0.8);
   }
 
   .about-text p {
     font-size: var(--fs-S);
-    padding: 0 30px;
+    padding: 0 25px;
   }
 
   .event-section {
@@ -1163,10 +1172,15 @@ img {
   }
 
   /*------------------EXHIBITIONS------------------------*/
+  .exhibitions {
+    max-height: 40vh;
+  }
+
   .exhibitions h1 {
     padding: 15px;
     width: 150px;
     font-size: var(--fs-L);
+    left: 40%;
   }
 
   .exhibitions-container {
@@ -1340,9 +1354,12 @@ img {
 
   .volunteer-txt,
   .internships-txt {
-    padding: 20px;
+    padding: 10px 20px;
     font-size: var(--fs-S);
     position: absolute;
-    margin: 0;
+    justify-content: center;
+    margin: 20px;
+    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255, 0.8);
   }
 }
