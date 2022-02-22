@@ -877,29 +877,34 @@ img {
 
 .support-background {
   background-color: #1ba1e8;
+  display: flex;
+  flex-direction: column;
 }
 
 .support-section {
   display: flex;
+  margin: 50px auto;
   width: 80%;
-  margin: 30px auto;
-  height: 100vh;
+  height: 80vh;
 }
 
 .support-img {
-  background-image: url(../images/toa-heftiba-412579.jpg);
-  background-position: center;
+  background-image: url(../images/roberto-nickson-396152.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   flex: 60%;
   margin-right: 20px;
-  border: #fff solid 20px;
+  box-shadow: 0 0 1em rgb(22, 22, 22);
 }
 
 .support-txt {
-  flex: 40%;
   background-color: #fff;
   font-size: var(--fs-L);
+  flex: 40%;
   padding: 30px;
+  box-shadow: 0 0 1em rgb(22, 22, 22);
+  flex-wrap: wrap;
 }
 
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
@@ -1427,25 +1432,16 @@ img {
   }
 
   .support-section {
-    margin: 30px;
-    height: 70vh;
-    padding: 20px;
+    display: block;
+    height: fit-content;
   }
 
   .support-img {
-    border: none;
-    margin-right: 0;
+    display: none;
   }
 
   .support-txt {
-    background-color: #fff;
+    padding: 30px;
     font-size: var(--fs-M);
-    padding: 20px;
   }
-
-
-
-  
-  
-  
 }
