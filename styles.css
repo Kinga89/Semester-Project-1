@@ -904,7 +904,7 @@ img {
   flex: 40%;
   padding: 30px;
   box-shadow: 0 0 1em rgb(22, 22, 22);
-  flex-wrap: wrap;
+  overflow: auto;
 }
 
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
