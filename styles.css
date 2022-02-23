@@ -710,9 +710,20 @@ img {
   text-align: center;
 }
 
+.opening-hrs h2 {
+  margin-left: 40px;
+}
+
 .opening-hrs h2,
 .admission h2 {
   padding-top: 10px;
+}
+
+.opening-hrs li {
+  text-align: center;
+  margin-left: 0;
+  text-transform: none;
+  line-height: 2;
 }
 
 .map-address-wrapper {
@@ -731,20 +742,14 @@ img {
 
 .visit-address h2 {
   text-align: left;
+  font-size: var(--fs-XL);
+  text-decoration: none;
 }
 
 .visit-address p,
 .map-section h2 {
   margin-top: auto;
   text-align: center;
-}
-
-.opening-hrs li,
-.opening-hrs h2 {
-  text-align: center;
-  margin-left: 0;
-  text-transform: none;
-  line-height: 2;
 }
 
 .cafe-and-shop-wrapper {
