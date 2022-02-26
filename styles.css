@@ -833,7 +833,7 @@ img {
 }
 
 .volunteer-img {
-  background-image: url(../images/roberto-nickson-396152.jpg);
+  background-image: url(../images/luke-ellis-craven-400722.jpg);
 }
 
 .internships-img {
@@ -914,7 +914,6 @@ img {
   overflow: auto;
 }
 
-
 /*--------------------------SUBSCRIBED-----------------------------*/
 .subscribed-section h1 {
   text-align: center;
@@ -940,7 +939,6 @@ img {
 .subscribed-section i {
   margin-right: 5px;
 }
-
 
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
 @media screen and (max-width: 810px) {
@@ -1475,5 +1473,23 @@ img {
   .support-txt {
     padding: 30px;
     font-size: var(--fs-M);
+  }
+  /*--------------------------SUBSCRIBED-----------------------------*/
+  .subscribed-section h1 {
+    font-size: var(--fs-L);
+    margin: 30px;
+  }
+
+  .subscribed-section {
+    margin-bottom: 20px;
+  }
+
+.subscribed-section p {
+  font-size: var(--fs-M);
+}
+
+
+  .fa-envelope-open {
+    font-size: 4em;
   }
 }
