@@ -226,7 +226,7 @@ footer {
 }
 
 .social-media i {
-  font-size: 3em;
+  font-size: 2em;
   padding: 0 10px;
   color: #fff;
 }
@@ -914,6 +914,34 @@ img {
   overflow: auto;
 }
 
+
+/*--------------------------SUBSCRIBED-----------------------------*/
+.subscribed-section h1 {
+  text-align: center;
+  margin: 100px auto 50px;
+}
+
+.subscribed-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subscribed-section p {
+  margin-top: 50px;
+  text-decoration: underline;
+  color: #000;
+  padding: 10px;
+}
+
+.fa-envelope-open {
+  font-size: 5em;
+}
+
+.subscribed-section i {
+  margin-right: 5px;
+}
+
+
 /*------------------HEADER & FOOTER (mobile/ipad)------------------*/
 @media screen and (max-width: 810px) {
   header {
@@ -1076,7 +1104,7 @@ img {
   .explore-section h1,
   .newsletter-section h1 {
     font-size: var(--fs-M);
-    padding: 20px 0 0;
+    padding: 20px 0 10px;
     background-color: transparent;
     margin: 0;
   }
@@ -1190,24 +1218,21 @@ img {
   .explore-container {
     height: 100%;
     margin-bottom: 10px;
-    padding: 0;
-    width: 100%;
-  }
-
-  .explore-text {
-    padding: 10px;
-    box-shadow: none;
+    padding: 20px;
+    display: block;
     background-color: #fff;
   }
 
-  .explore-text p {
-    font-size: var(--fs-XS);
-    padding: 0;
+  .explore-text {
+    box-shadow: none;
   }
 
   .explore-image {
-    padding: 0;
     box-shadow: none;
+  }
+
+  .explore-text p {
+    font-size: var(--fs-S);
   }
 
   .explore-image h2 {
