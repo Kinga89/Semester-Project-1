@@ -710,17 +710,17 @@ img {
   text-align: center;
 }
 
-.opening-hrs h2 {
-  margin-left: 40px;
-}
-
 .opening-hrs h2,
 .admission h2 {
   padding-top: 10px;
 }
 
-.opening-hrs li {
+.opening-hrs ol {
   text-align: center;
+  padding-left: 0;
+}
+
+.opening-hrs li {
   margin-left: 0;
   text-transform: none;
   line-height: 2;
@@ -1075,8 +1075,9 @@ img {
   }
 }
 
-/*----------------HOMEPAGE (mobile/ipad)-----------------*/
+/*----------------------PAGE CONTENT (mobile)----------------------*/
 @media screen and (max-width: 810px) {
+  /*----------------HOMEPAGE (mobile)-----------------*/
   .spacer {
     height: 100px;
     width: 100%;
@@ -1284,7 +1285,7 @@ img {
   }
 
   .exhibition-type img {
-    max-height: 40vh;
+    max-height: 30vh;
   }
 
   .exhibition-type h2 {
@@ -1322,7 +1323,7 @@ img {
 
   .opening-hrs {
     font-size: var(--fs-M);
-    margin: 20px 0;
+    text-align: center;
   }
 
   .opening-hrs li {
@@ -1348,6 +1349,7 @@ img {
   .opening-hrs h2,
   .admission h2 {
     font-size: var(--fs-L);
+    text-align: center;
   }
 
   .map-address-wrapper {
@@ -1484,12 +1486,153 @@ img {
     margin-bottom: 20px;
   }
 
-.subscribed-section p {
-  font-size: var(--fs-M);
-}
-
+  .subscribed-section p {
+    font-size: var(--fs-M);
+  }
 
   .fa-envelope-open {
     font-size: 4em;
+  }
+}
+
+/*-----------------------HEADER (ipad)-----------------------*/
+@media screen and (min-width: 700px) and (max-width: 810px) {
+  nav {
+    margin-top: 3vh;
+    width: 70px;
+  }
+
+  .logo {
+    width: 120px;
+    height: fit-content;
+    margin: 0;
+    display: block;
+  }
+}
+
+/*----------------PAGE CONTENT (ipad)-----------------*/
+@media screen and (min-width: 700px) and (max-width: 810px) {
+  /*----------------HOMEPAGE (ipad)-----------------*/
+  .slider-container {
+    height: 60vh;
+  }
+
+  .slider-container img {
+    height: 60vh;
+  }
+
+  .box h2 {
+    font-size: var(--fs-S);
+  }
+
+  .about-section h1,
+  .event-section h1,
+  .explore-section h1,
+  .newsletter-section h1 {
+    font-size: var(--fs-L);
+    padding-bottom: 0;
+  }
+
+  .about-wrapper {
+    height: 50vh;
+  }
+
+  .about-background {
+    height: 50vh;
+  }
+
+  .about-text p,
+  .event-txt h2,
+  .event-txt p,
+  .explore-text p,
+  .explore-image h2 {
+    font-size: var(--fs-M);
+  }
+
+  .form-wrapper > * {
+    width: 250px;
+  }
+
+  /*------------------EXHIBITIONS------------------------*/
+  .exhibitions h1 {
+    font-size: var(--fs-XL);
+  }
+
+  .exhibitions-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .exhibition-type img {
+    max-height: 20vh;
+  }
+
+  .exhibition-type h2 {
+    font-size: var(--fs-L);
+  }
+  .exhibition-type p {
+    font-size: var(--fs-M);
+  }
+
+  /*------------------------VISIT US---------------------------*/
+  .visit-section {
+    margin: 0 100px;
+  }
+
+  .museum h1 {
+    font-size: var(--fs-XL);
+  }
+
+  .opening-hrs li {
+    font-size: var(--fs-M);
+  }
+
+
+  .map-section h2,
+  .opening-hrs h2,
+  .admission h2,
+  .visit-address h2,
+  .cafe h2,
+  .shop h2,
+  .accessibility h2 {
+    font-size: var(--fs-L);
+  }
+
+  .visit-address p,
+  .map-section h2 {
+    line-height: 1;
+  }
+
+  .cafe-and-shop-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .accessibility {
+    margin-bottom: 20px;
+  }
+
+  .cafe img,
+  .shop img,
+  .accessibility img {
+    max-height: 40vh;
+  }
+
+  /*-----------------------GET INVOLVED-------------------------------*/
+  .getinvolved-section h2 {
+    font-size: bolder;
+    font-size: var(--fs-XL);
+  }
+
+  .getinvolved-section {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .volunteer,
+  .internships {
+    height: 50vh;
   }
 }
