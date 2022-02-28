@@ -940,7 +940,7 @@ img {
   margin-right: 5px;
 }
 
-/*------------------HEADER & FOOTER (mobile/ipad)------------------*/
+/*----------------HEADER & FOOTER (mobile/ipad)--------------*/
 @media screen and (max-width: 810px) {
   header {
     height: 100px;
@@ -1075,9 +1075,8 @@ img {
   }
 }
 
-  /*----------------HOMEPAGE (mobile)-----------------*/
+/*----------------HOMEPAGE & ALL (mobile)-----------------*/
 @media screen and (max-width: 810px) {
-  /*----------------HOMEPAGE (mobile)-----------------*/
   .spacer {
     height: 100px;
     width: 100%;
@@ -1495,12 +1494,12 @@ img {
   }
 }
 
-/*-----------------------HEADER (ipad)-----------------------*/
+/*----------------HEADER (ipad)-----------------------*/
 @media screen and (min-width: 700px) and (max-width: 810px) {
   .fa-search {
     font-size: var(--fs-M);
   }
-  
+
   .search {
     display: inline;
     position: absolute;
@@ -1508,7 +1507,7 @@ img {
     transform: translate(0);
     top: 45%;
   }
-  
+
   .fa-bars {
     font-size: var(--fs-L);
     right: 50px;
@@ -1517,7 +1516,7 @@ img {
   .search2 {
     display: none;
   }
-  
+
   nav {
     margin-top: 3vh;
     width: 70px;
@@ -1531,7 +1530,7 @@ img {
   }
 }
 
-  /*----------------HOMEPAGE (ipad)-----------------*/
+/*----------------HOMEPAGE & ALL (ipad)-----------------*/
 @media screen and (min-width: 700px) and (max-width: 810px) {
   .slider-container {
     height: 60vh;
@@ -1542,7 +1541,7 @@ img {
   }
 
   .box h2 {
-    font-size: var(--fs-S);
+    font-size: var(--fs-M);
   }
 
   .about-section h1,
@@ -1589,9 +1588,12 @@ img {
 
   .exhibition-type h2 {
     font-size: var(--fs-L);
+    padding: 0;
   }
   .exhibition-type p {
     font-size: var(--fs-M);
+    padding: 0 15px;
+    margin-bottom: 15px;
   }
 
   /*------------------------VISIT US---------------------------*/
@@ -1606,7 +1608,6 @@ img {
   .opening-hrs li {
     font-size: var(--fs-M);
   }
-
 
   .map-section h2,
   .opening-hrs h2,
