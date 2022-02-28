@@ -1075,7 +1075,7 @@ img {
   }
 }
 
-/*----------------------PAGE CONTENT (mobile)----------------------*/
+  /*----------------HOMEPAGE (mobile)-----------------*/
 @media screen and (max-width: 810px) {
   /*----------------HOMEPAGE (mobile)-----------------*/
   .spacer {
@@ -1497,6 +1497,27 @@ img {
 
 /*-----------------------HEADER (ipad)-----------------------*/
 @media screen and (min-width: 700px) and (max-width: 810px) {
+  .fa-search {
+    font-size: var(--fs-M);
+  }
+  
+  .search {
+    display: inline;
+    position: absolute;
+    right: 70px;
+    transform: translate(0);
+    top: 45%;
+  }
+  
+  .fa-bars {
+    font-size: var(--fs-L);
+    right: 50px;
+  }
+
+  .search2 {
+    display: none;
+  }
+  
   nav {
     margin-top: 3vh;
     width: 70px;
@@ -1510,9 +1531,8 @@ img {
   }
 }
 
-/*----------------PAGE CONTENT (ipad)-----------------*/
-@media screen and (min-width: 700px) and (max-width: 810px) {
   /*----------------HOMEPAGE (ipad)-----------------*/
+@media screen and (min-width: 700px) and (max-width: 810px) {
   .slider-container {
     height: 60vh;
   }
