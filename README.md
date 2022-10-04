@@ -28,7 +28,7 @@ Media assets have been provided</p>
 
 
 <h2>Getting Started</h2> 
-Project can be accessed by cloning following repository: 
+Project can be accessed through following repository: 
 
 
 ```
