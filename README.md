@@ -1,4 +1,4 @@
-<h1>Rainy Days e-commerce site</h1>
+<h1>An interactive website for children´s science museum</h1>
 
 <div id="images">
 <img src="images/screenshot.museum.png" width="400" height="200"/>
@@ -6,7 +6,8 @@
 </div>
 
 <h2>Description</h2>
-<p>A website for a fictional Community Science Museum for children. Site was created for the purpose of semester project. Its core target audience is primary and middle school children and families with young children. The goal was to create a website that was informative and engaging, but also encouraging for the viewers to visit the museum itself. </p>
+<p>An interactive website for children´s science museum called Community Science Museum. Site was created for the purpose of semester project. It´s core target audience is primary and middle school children and families with young children. The goal was to create a website that was informative and engaging, but also encouraging for the viewers to visit the museum itself. 
+Media assets have been provided</p>
 
 <h3>Site architecture</h3>
 <ul>
