@@ -1,4 +1,4 @@
-<h1>An interactive website for children´s science museum</h1>
+# An interactive website for children´s science museum
 
 <div id="images">
 <img src="images/screenshot.museum.png" width="400" height="200"/>
